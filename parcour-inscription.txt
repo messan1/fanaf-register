@@ -1,0 +1,50 @@
+il y a deux type d'inscription :
+- inscription pour les membres de la FANAF
+- inscription pour les non-membres de la FANAF
+
+pour les membres de la FANAF, 
+il ya une possibilité de sinscrire individuellement et en groupe
+- inscription individuelle :
+    - informations personnelles
+    - selection de l'organisation
+    - selection des services (Navette, Car de ramassage, Hôtel, etc.)
+    - informations de paiement (Simulation de paiement stripe)
+    - simulation requete d'inscription (requete d'inscription à la FANAF) redirection de succes ou erreur
+
+- inscription en groupe :
+    - informations personnelles (de l'utilisateur principal)
+    - selection du nombre de personnes
+    - informations du groupe (selection de l'organisation, selection des services, etc.)
+    - un bouton ajouter un membre pour ajouter des membres au groupe
+    - un bouton supprimer un membre pour supprimer un membre du groupe
+    - un bouton modifier un membre pour modifier un membre du groupe
+    - un bouton modifier le groupe pour modifier le groupe
+    - un bouton supprimer le groupe pour supprimer le groupe
+    - un bouton ajouter un service pour ajouter un service au groupe
+    - un bouton supprimer un service pour supprimer un service du groupe
+    - un bouton modifier un service pour modifier un service du groupe
+    - entrer les information des membres du groupe
+    - informations de paiement (Simulation de paiement stripe)
+    - simulation requete d'inscription (requete d'inscription à la FANAF) redirection de succes ou erreur
+
+pour les non-membres de la FANAF, il faut que le non-membre soit inscrit sur le site de la FANAF
+il ya une possibilité de sinscrire individuellement et en groupe :
+- inscription individuelle :
+    - pareil que pour les membres de la FANAF a la difference que selectionner le pays, d'entrer manuelement son entrprise
+- inscription en groupe :
+    - pareil que pour les membres de la FANAF a la difference que selectionner le pays, d'entrer manuelement son entrprise
+
+
+
+
+Une information capitale c'est que les tarifs sont differents pour les membres et les non-membres de la FANAF
+- tarifs pour les membres de la FANAF
+- tarifs pour les non-membres de la FANAF
+- tarifs pour les membres de la FANAF en groupe
+- tarifs pour les non-membres de la FANAF en groupe
+- tarifs pour les membres de la FANAF en groupe
+
+pour les groupes c'est les tarif normal multiplié par le nombre de personnes.
+
+ce sont des Directeur qui vont venir s'inscrir sur la plateforme. donc il faut linterface soit moderne, epuré, elegant et accessible.
+
