@@ -1,11 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import "@/styles/globals.css";
 import { satoshi } from "@/styles/fonts";
-import TopBanner from "@/components/layout/Banner/TopBanner";
-import TopNavbar from "@/components/layout/Navbar/TopNavbar";
-import Footer from "@/components/layout/Footer";
 import HolyLoader from "holy-loader";
 import LayoutWrapper from "@/app/LayoutWrapper";
+import { QueryProvider } from "@/lib/providers/QueryProvider";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "FANAF 2026 - 50ᵉ Assemblée Générale | Abidjan, Côte d'Ivoire",
@@ -33,10 +32,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={satoshi.className}>
         <HolyLoader color="#868686" />
-        {/* <TopBanner /> */}
-        <LayoutWrapper>
-          {children}
-        </LayoutWrapper>
+        <QueryProvider>
+          <LayoutWrapper>
+            {children}
+          </LayoutWrapper>
+          <Toaster position="top-right" richColors />
+        </QueryProvider>
       </body>
     </html>
   );
