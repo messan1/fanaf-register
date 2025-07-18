@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useQueryState } from "nuqs";
 
@@ -12,16 +13,18 @@ export const SelectionCard = ({
   const router = useRouter();
   const [registrationType, setRegistrationType] = useQueryState("type",{defaultValue:"member"});
 
+  const t = useTranslations("Home")
+
   return (
-    <div className="bg-white rounded-3xl p-8 px-12 flex-1 shadow-2xl max-w-2xl">
+    <div className="bg-white rounded-3xl p-8 px-12 flex-1 border max-w-2xl">
       <div className="space-y-4">
         <div className="space-y-4">
           <h3 className="text-gray-900 text-md font-medium tracking-wide uppercase">
             {title}
           </h3>
           <p className="text-gray-600 text-md leading-relaxed">
-            Our meetings provide a platform for trust-based engagement, robust
-            debate and public-facing dialogue.
+            
+            {isMember! ? t("detailSingle") : t("detailGroup")}
           </p>
         </div>
 

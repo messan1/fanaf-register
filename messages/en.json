@@ -279,6 +279,8 @@
     }
   },
   "Home": {
+    "detailGroup":"For group registrations, the rate depends on the number of participants",
+    "detailSingle":"Reserve your spot with individual registration and join our exclusive circle for this exceptional event.",
     "individual": {
       "title": "Join as Member and help shape a better future",
       "subtitle": "Transform your career and expand your network with exclusive access to global leaders and industry experts.",
@@ -312,7 +314,7 @@
       "joinAsMember": "Join as member",
       "joinAsNonMember": "Join as non-member",
       "startRegistration": "Start you registration process",
-      "registerOrganization": "Register your organization",
+      "registerOrganization": "Register your group spot",
       "createIndividualAccount": "Create your individual account",
       "toggleNavigation": "Toggle navigation",
       "userProfile": "User profile"

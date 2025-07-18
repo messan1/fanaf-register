@@ -283,6 +283,8 @@
     }
   },
   "Home": {
+    "detailGroup":"Pour les inscriptions groupées, le tarif est fonction du nombre de participants.",
+    "detailSingle":"Réservez votre place en inscription individuelle et rejoignez notre cercle privilégié pour cet événement d'exception.",
     "individual": {
       "title": "Rejoignez-nous en tant que Membre et contribuez à façonner un avenir meilleur",
       "subtitle": "Transformez votre carrière et élargissez votre réseau avec un accès exclusif aux leaders mondiaux et aux experts de l'industrie.",
