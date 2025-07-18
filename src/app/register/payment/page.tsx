@@ -10,9 +10,9 @@ import {
 import { useRegistration } from "@/lib/hooks/useRegistration";
 import { CheckIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useQueryState } from "nuqs";
 import { useState, useEffect, useMemo } from "react";
 import { useTranslations } from "next-intl";
+import { useQueryState } from "nuqs";
 
 const publicKey = "pk_live_e60f1f7bfe3301fff3f5a14c24e753ce17bb04ee";
 
@@ -127,7 +127,7 @@ export default function PayPage() {
           console.log(data);
         },
       });
-      router.push("http://localhost:5173?details=" + details);
+      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
     },
     onClose: async () => {
       const formData = JSON.parse(atob(details));
