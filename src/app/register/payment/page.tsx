@@ -127,10 +127,15 @@ export default function PayPage() {
           console.log(data);
         },
       });
+      console.log("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type)
+
       router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
     },
     onClose: async () => {
       const formData = JSON.parse(atob(details));
+      console.log("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type)
+      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
+
       //On payment succeed
       console.log(t("console.formData"));
       console.log(formData);
@@ -140,6 +145,9 @@ export default function PayPage() {
       await registrationMutation.mutateAsync(formData, {
         onError(error, variables, context) {
           console.log(error);
+             console.log("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type)
+      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
+
         },
         onSuccess(data, variables, context) {
           console.log(data);
