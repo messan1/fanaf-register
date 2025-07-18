@@ -134,6 +134,9 @@ export default function PayPage() {
       //On payment succeed
       console.log(t("console.formData"));
       console.log(formData);
+      //On payment succeed
+      console.log(t("console.paymentSucceed"));
+      console.log(formData);
       await registrationMutation.mutateAsync(formData, {
         onError(error, variables, context) {
           console.log(error);
@@ -142,6 +145,7 @@ export default function PayPage() {
           console.log(data);
         },
       });
+      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
     },
   };
 
