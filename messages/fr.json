@@ -1,0 +1,328 @@
+{
+    "PaymentPage": {
+    "title": "Individuel",
+    "actions": {
+      "payNow": "Payer Maintenant",
+      "processingPayment": "Traitement du paiement..."
+    },
+    "recap": {
+      "title": "Récapitulatif de vos informations",
+      "fields": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "Email",
+        "phone": "Téléphone",
+        "function": "Fonction",
+        "need": "Besoin",
+        "country": "Pays",
+        "organization": "Organisation"
+      }
+    },
+    "benefits": {
+      "title": "Ce que vous obtiendrez",
+      "items": [
+  {
+          "text": "Recevez un badge officiel de l'événement avec votre nom et vos identifiants"
+        },
+        {
+          "text": "Obtenez une facture détaillée pour votre inscription et vos dossiers de paiement"
+        },
+        {
+          "text": "Recevez un reçu de paiement officiel pour les rapports de dépenses et la documentation"
+        },
+        {
+          "text": "Demandez une lettre de soutien pour visa si nécessaire pour les voyages internationaux"
+        }
+      ]
+    },
+    "legal": {
+      "paymentTerms": "En cliquant sur \"Payer Maintenant\", vous acceptez nos",
+      "termsLink": "Conditions de Service",
+      "and": "et notre",
+      "privacyLink": "Politique de Confidentialité"
+    },
+    "console": {
+      "paymentSucceed": "Paiement réussi",
+      "formData": "Données du formulaire traitées"
+    }
+  },
+  "RegistrantForm": {
+    "fields": {
+      "firstName": {
+        "label": "Prénom",
+        "required": "Le prénom est requis.",
+        "placeholder": "Entrez votre prénom"
+      },
+      "lastName": {
+        "label": "Nom",
+        "required": "Le nom est requis.",
+        "placeholder": "Entrez votre nom"
+      },
+      "email": {
+        "label": "Email",
+        "required": "L'email est requis.",
+        "invalid": "Format d'email invalide.",
+        "placeholder": "Entrez votre email"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "required": "Le numéro de téléphone est requis.",
+        "invalid": "Le numéro de téléphone ne doit contenir que des chiffres.",
+        "placeholder": "Numéro de téléphone"
+      },
+      "function": {
+        "label": "Fonction",
+        "required": "La fonction est requise.",
+        "placeholder": "Sélectionnez votre fonction"
+      },
+      "need": {
+        "label": "Besoin",
+        "required": "Le besoin est requis.",
+        "placeholder": "Sélectionnez votre besoin"
+      },
+      "country": {
+        "label": "Pays",
+        "required": "Le pays est requis.",
+        "placeholder": "Sélectionnez votre pays"
+      },
+      "organization": {
+        "label": "Organisation",
+        "required": "L'organisation est requise.",
+        "placeholder": "Sélectionnez votre organisation"
+      }
+    },
+    "functions": [
+      "Directeur Général",
+      "Directeur Marketing",
+      "Responsable Communication",
+      "Chef de Projet",
+      "Consultant",
+      "Étudiant",
+      "Autre"
+    ],
+    "needs": [
+      "Consultation",
+      "Formation",
+      "Audit",
+      "Support",
+      "Stratégie Digitale",
+      "Développement Web",
+      "Autre"
+    ],
+    "countries": [
+      "France",
+      "Belgique",
+      "Suisse",
+      "Canada",
+      "Maroc",
+      "Tunisie",
+      "Algérie",
+      "Sénégal",
+      "Côte d'Ivoire",
+      "Autre"
+    ],
+    "organizations": [
+      "Entreprise Privée",
+      "Organisation Publique",
+      "ONG",
+      "Startup",
+      "Freelance",
+      "Université",
+      "Autre"
+    ]
+  },
+  "GroupRegistration": {
+    "registrant": {
+      "defaultName": "Participant",
+      "removeLabel": "Supprimer le participant"
+    },
+    "actions": {
+      "addRegistrant": "Ajouter un autre participant",
+      "submit": "Soumettre",
+      "send": "Envoyer"
+    },
+    "validation": {
+      "formErrors": "Le formulaire contient des erreurs de validation.",
+      "groupNameRequired": "Le nom du groupe est requis."
+    },
+    "legal": {
+      "termsText": "En envoyant ce formulaire, vous acceptez nos",
+      "termsLink": "Conditions d'utilisation",
+      "and": "et notre",
+      "privacyLink": "Politique de confidentialité"
+    },
+    "console": {
+      "allRegistrantsData": "Données de tous les participants :",
+      "registrationSubmitted": "Données d'inscription soumises ! Vérifiez la console pour les détails."
+    }
+  },
+  "RegistrationForm": {
+    "fields": {
+      "firstName": {
+        "label": "Prénom",
+        "required": "Le prénom est requis.",
+        "placeholder": "Entrez votre prénom"
+      },
+      "lastName": {
+        "label": "Nom",
+        "required": "Le nom est requis.",
+        "placeholder": "Entrez votre nom"
+      },
+      "email": {
+        "label": "Email",
+        "required": "L'email est requis.",
+        "invalid": "Format d'email invalide.",
+        "placeholder": "Entrez votre email"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "required": "Le numéro de téléphone est requis.",
+        "invalid": "Le numéro de téléphone ne doit contenir que des chiffres.",
+        "placeholder": "Numéro de téléphone"
+      },
+      "function": {
+        "label": "Fonction",
+        "required": "La fonction est requise.",
+        "placeholder": "Sélectionnez votre fonction"
+      },
+      "need": {
+        "label": "Besoin",
+        "required": "Le besoin est requis.",
+        "placeholder": "Sélectionnez votre besoin"
+      },
+      "country": {
+        "label": "Pays",
+        "required": "Le pays est requis.",
+        "placeholder": "Sélectionnez votre pays"
+      },
+      "organization": {
+        "label": "Organisation",
+        "required": "L'organisation est requise.",
+        "placeholder": "Sélectionnez votre organisation"
+      }
+    },
+    "functions": [
+      "Directeur",
+      "Manager",
+      "Responsable RH",
+      "Commercial",
+      "Chargé de mission",
+      "Consultant",
+      "Chef de projet",
+      "Autre..."
+    ],
+    "needs": [
+      "Networking",
+      "Formation",
+      "Partenariat",
+      "Veille",
+      "Business",
+      "Autre..."
+    ],
+    "countries": [
+      { "name": "Côte d'Ivoire", "code": "CI", "phoneCode": "+225" },
+      { "name": "Sénégal", "code": "SN", "phoneCode": "+221" },
+      { "name": "Ghana", "code": "GH", "phoneCode": "+233" },
+      { "name": "Nigeria", "code": "NG", "phoneCode": "+234" },
+      { "name": "Cameroun", "code": "CM", "phoneCode": "+237" },
+      { "name": "Mali", "code": "ML", "phoneCode": "+223" },
+      { "name": "Burkina Faso", "code": "BF", "phoneCode": "+226" },
+      { "name": "Bénin", "code": "BJ", "phoneCode": "+229" },
+      { "name": "Togo", "code": "TG", "phoneCode": "+228" },
+      { "name": "Niger", "code": "NE", "phoneCode": "+227" },
+      { "name": "Tchad", "code": "TD", "phoneCode": "+235" },
+      {
+        "name": "République Centrafricaine",
+        "code": "CF",
+        "phoneCode": "+236"
+      },
+      { "name": "Gabon", "code": "GA", "phoneCode": "+241" },
+      { "name": "Congo", "code": "CG", "phoneCode": "+242" },
+      {
+        "name": "République Démocratique du Congo",
+        "code": "CD",
+        "phoneCode": "+243"
+      },
+      { "name": "Rwanda", "code": "RW", "phoneCode": "+250" },
+      { "name": "Burundi", "code": "BI", "phoneCode": "+257" },
+      { "name": "Tanzanie", "code": "TZ", "phoneCode": "+255" },
+      { "name": "Kenya", "code": "KE", "phoneCode": "+254" },
+      { "name": "Ouganda", "code": "UG", "phoneCode": "+256" },
+      { "name": "Éthiopie", "code": "ET", "phoneCode": "+251" },
+      { "name": "Somalie", "code": "SO", "phoneCode": "+252" },
+      { "name": "Djibouti", "code": "DJ", "phoneCode": "+253" },
+      { "name": "Soudan", "code": "SD", "phoneCode": "+249" },
+      { "name": "Soudan du Sud", "code": "SS", "phoneCode": "+211" },
+      { "name": "Érythrée", "code": "ER", "phoneCode": "+291" },
+      { "name": "Égypte", "code": "EG", "phoneCode": "+20" },
+      { "name": "Libye", "code": "LY", "phoneCode": "+218" },
+      { "name": "Tunisie", "code": "TN", "phoneCode": "+216" },
+      { "name": "Algérie", "code": "DZ", "phoneCode": "+213" },
+      { "name": "Maroc", "code": "MA", "phoneCode": "+212" },
+      { "name": "Mauritanie", "code": "MR", "phoneCode": "+222" },
+      { "name": "Autre", "code": "XX", "phoneCode": "+" }
+    ],
+    "organizations": [
+      "Entreprise Privée",
+      "Organisation Publique",
+      "ONG",
+      "Startup",
+      "Freelance",
+      "Université",
+      "Autre"
+    ],
+    "actions": {
+      "submit": "Soumettre",
+      "send": "Envoyer"
+    },
+    "legal": {
+      "termsText": "En envoyant ce formulaire, vous acceptez nos",
+      "termsLink": "Conditions d'utilisation",
+      "and": "et notre",
+      "privacyLink": "Politique de confidentialité"
+    }
+  },
+  "Home": {
+    "individual": {
+      "title": "Rejoignez-nous en tant que Membre et contribuez à façonner un avenir meilleur",
+      "subtitle": "Transformez votre carrière et élargissez votre réseau avec un accès exclusif aux leaders mondiaux et aux experts de l'industrie.",
+      "description": "Accédez au contenu premium, aux événements de networking et aux opportunités de développement professionnel conçues pour les individus ambitieux.",
+      "price": "350.000 FCFA",
+      "priceEuro": "250€ / 145$ par personne",
+      "membershipType": "Adhésion Individuelle",
+      "privileges": {
+        "item1": "Accès à tous les événements virtuels et en présentiel",
+        "item2": "Opportunités de networking exclusives",
+        "item3": "Ressources de développement professionnel",
+        "item4": "Rapports et analyses mensuels de l'industrie"
+      }
+    },
+    "group": {
+      "title": "Rejoignez-nous en tant qu'Organisation et menez le changement collectif",
+      "subtitle": "Accélérez l'impact de votre organisation grâce à des partenariats collaboratifs et des alliances stratégiques.",
+      "description": "Adhésion organisationnelle complète avec accès d'équipe, avantages corporatifs et programmes de développement du leadership.",
+      "price": "500.000 FCFA",
+      "priceEuro": "500€ / 575$",
+      "membershipType": "Adhésion Organisation",
+      "privileges": {
+        "item1": "Accès jusqu'à 10 membres d'équipe",
+        "item2": "Opportunités de branding corporatif",
+        "item3": "Programmes de leadership exécutif",
+        "item4": "Facilitation de partenariats stratégiques",
+        "item5": "Formations et ateliers personnalisés"
+      }
+    },
+    "ui": {
+      "joinAsMember": "Rejoindre en tant que membre",
+      "joinAsNonMember": "Rejoindre en tant que non-membre",
+      "startRegistration": "Commencer votre processus d'inscription",
+      "registerOrganization": "Enregistrer votre organisation",
+      "createIndividualAccount": "Créer votre compte individuel",
+      "toggleNavigation": "Basculer la navigation",
+      "userProfile": "Profil utilisateur"
+    },
+    "images": {
+      "worldEconomicForumEvent": "Événement du Forum économique mondial"
+    }
+  }
+}

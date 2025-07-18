@@ -1,9 +1,6 @@
 import HeroSection from "@/components/HeroSection";
+import { redirect } from "next/navigation";
 
 export default function HomePage() {
-  return (
-    <main className="min-h-screen">
-      <HeroSection />
-    </main>
-  );
+  return redirect("/register")
 }

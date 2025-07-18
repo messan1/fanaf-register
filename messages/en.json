@@ -1,0 +1,324 @@
+{
+  "PaymentPage": {
+    "title": "Individual",
+    "actions": {
+      "payNow": "Pay Now",
+      "processingPayment": "Processing payment..."
+    },
+    "recap": {
+      "title": "Summary of your information",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "function": "Function",
+        "need": "Need",
+        "country": "Country",
+        "organization": "Organization"
+      }
+    },
+    "benefits": {
+      "title": "What you'll get",
+      "items": [
+    {
+          "text": "Receive an official event badge with your name and credentials"
+        },
+        {
+          "text": "Get a detailed invoice for your registration and payment records"
+        },
+        {
+          "text": "Obtain an official payment receipt for expense reporting and documentation"
+        },
+        {
+          "text": "Request a visa support letter if needed for international travel"
+        }
+      ]
+    },
+    "legal": {
+      "paymentTerms": "By clicking \"Pay Now\", you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and",
+      "privacyLink": "Privacy Policy"
+    },
+    "console": {
+      "paymentSucceed": "On payment succeed",
+      "formData": "Form data processed"
+    }
+  },
+  "RegistrantForm": {
+    "fields": {
+      "firstName": {
+        "label": "First Name",
+        "required": "First Name is required.",
+        "placeholder": "Enter your first name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "required": "Last Name is required.",
+        "placeholder": "Enter your last name"
+      },
+      "email": {
+        "label": "Email",
+        "required": "Email is required.",
+        "invalid": "Invalid email format.",
+        "placeholder": "Enter your email"
+      },
+      "phone": {
+        "label": "Phone",
+        "required": "Phone number is required.",
+        "invalid": "Phone number must contain only digits.",
+        "placeholder": "Phone number"
+      },
+      "function": {
+        "label": "Function",
+        "required": "Function is required.",
+        "placeholder": "Select your function"
+      },
+      "need": {
+        "label": "Need",
+        "required": "Need is required.",
+        "placeholder": "Select your need"
+      },
+      "country": {
+        "label": "Country",
+        "required": "Country is required.",
+        "placeholder": "Select your country"
+      },
+      "organization": {
+        "label": "Organization",
+        "required": "Organization is required.",
+        "placeholder": "Select your organization"
+      }
+    },
+    "functions": [
+      "General Manager",
+      "Marketing Director",
+      "Communications Manager",
+      "Project Manager",
+      "Consultant",
+      "Student",
+      "Other"
+    ],
+    "needs": [
+      "Consultation",
+      "Training",
+      "Audit",
+      "Support",
+      "Digital Strategy",
+      "Web Development",
+      "Other"
+    ],
+    "countries": [
+      "France",
+      "Belgium",
+      "Switzerland",
+      "Canada",
+      "Morocco",
+      "Tunisia",
+      "Algeria",
+      "Senegal",
+      "Ivory Coast",
+      "Other"
+    ],
+    "organizations": [
+      "Private Company",
+      "Public Organization",
+      "NGO",
+      "Startup",
+      "Freelance",
+      "University",
+      "Other"
+    ]
+  },
+  "GroupRegistration": {
+    "registrant": {
+      "defaultName": "Registrant",
+      "removeLabel": "Remove registrant"
+    },
+    "actions": {
+      "addRegistrant": "Add another registrant",
+      "submit": "Submit",
+      "send": "Send"
+    },
+    "validation": {
+      "formErrors": "Form has validation errors.",
+      "groupNameRequired": "Group name is required."
+    },
+    "legal": {
+      "termsText": "By submitting this form, you agree to our",
+      "termsLink": "Terms of Use",
+      "and": "and our",
+      "privacyLink": "Privacy Policy"
+    },
+    "console": {
+      "allRegistrantsData": "All Registrants Data:",
+      "registrationSubmitted": "Registration data submitted! Check console for details."
+    }
+  },
+  "RegistrationForm": {
+    "fields": {
+      "firstName": {
+        "label": "First Name",
+        "required": "First Name is required.",
+        "placeholder": "Enter your first name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "required": "Last Name is required.",
+        "placeholder": "Enter your last name"
+      },
+      "email": {
+        "label": "Email",
+        "required": "Email is required.",
+        "invalid": "Invalid email format.",
+        "placeholder": "Enter your email"
+      },
+      "phone": {
+        "label": "Phone",
+        "required": "Phone number is required.",
+        "invalid": "Phone number must contain only digits.",
+        "placeholder": "Phone number"
+      },
+      "function": {
+        "label": "Function",
+        "required": "Function is required.",
+        "placeholder": "Select your function"
+      },
+      "need": {
+        "label": "Need",
+        "required": "Need is required.",
+        "placeholder": "Select your need"
+      },
+      "country": {
+        "label": "Country",
+        "required": "Country is required.",
+        "placeholder": "Select your country"
+      },
+      "organization": {
+        "label": "Organization",
+        "required": "Organization is required.",
+        "placeholder": "Select your organization"
+      }
+    },
+    "functions": [
+      "Director",
+      "Manager",
+      "HR Manager",
+      "Sales Representative",
+      "Project Manager",
+      "Consultant",
+      "Project Leader",
+      "Other..."
+    ],
+    "needs": [
+      "Networking",
+      "Training",
+      "Partnership",
+      "Research",
+      "Business",
+      "Other..."
+    ],
+    "countries": [
+      { "name": "Côte d'Ivoire", "code": "CI", "phoneCode": "+225" },
+      { "name": "Senegal", "code": "SN", "phoneCode": "+221" },
+      { "name": "Ghana", "code": "GH", "phoneCode": "+233" },
+      { "name": "Nigeria", "code": "NG", "phoneCode": "+234" },
+      { "name": "Cameroon", "code": "CM", "phoneCode": "+237" },
+      { "name": "Mali", "code": "ML", "phoneCode": "+223" },
+      { "name": "Burkina Faso", "code": "BF", "phoneCode": "+226" },
+      { "name": "Benin", "code": "BJ", "phoneCode": "+229" },
+      { "name": "Togo", "code": "TG", "phoneCode": "+228" },
+      { "name": "Niger", "code": "NE", "phoneCode": "+227" },
+      { "name": "Chad", "code": "TD", "phoneCode": "+235" },
+      { "name": "Central African Republic", "code": "CF", "phoneCode": "+236" },
+      { "name": "Gabon", "code": "GA", "phoneCode": "+241" },
+      { "name": "Congo", "code": "CG", "phoneCode": "+242" },
+      {
+        "name": "Democratic Republic of Congo",
+        "code": "CD",
+        "phoneCode": "+243"
+      },
+      { "name": "Rwanda", "code": "RW", "phoneCode": "+250" },
+      { "name": "Burundi", "code": "BI", "phoneCode": "+257" },
+      { "name": "Tanzania", "code": "TZ", "phoneCode": "+255" },
+      { "name": "Kenya", "code": "KE", "phoneCode": "+254" },
+      { "name": "Uganda", "code": "UG", "phoneCode": "+256" },
+      { "name": "Ethiopia", "code": "ET", "phoneCode": "+251" },
+      { "name": "Somalia", "code": "SO", "phoneCode": "+252" },
+      { "name": "Djibouti", "code": "DJ", "phoneCode": "+253" },
+      { "name": "Sudan", "code": "SD", "phoneCode": "+249" },
+      { "name": "South Sudan", "code": "SS", "phoneCode": "+211" },
+      { "name": "Eritrea", "code": "ER", "phoneCode": "+291" },
+      { "name": "Egypt", "code": "EG", "phoneCode": "+20" },
+      { "name": "Libya", "code": "LY", "phoneCode": "+218" },
+      { "name": "Tunisia", "code": "TN", "phoneCode": "+216" },
+      { "name": "Algeria", "code": "DZ", "phoneCode": "+213" },
+      { "name": "Morocco", "code": "MA", "phoneCode": "+212" },
+      { "name": "Mauritania", "code": "MR", "phoneCode": "+222" },
+      { "name": "Other", "code": "XX", "phoneCode": "+" }
+    ],
+    "organizations": [
+      "Private Company",
+      "Public Organization",
+      "NGO",
+      "Startup",
+      "Freelance",
+      "University",
+      "Other"
+    ],
+    "actions": {
+      "submit": "Submit",
+      "send": "Send"
+    },
+    "legal": {
+      "termsText": "By submitting this form, you agree to our",
+      "termsLink": "Terms of Use",
+      "and": "and our",
+      "privacyLink": "Privacy Policy"
+    }
+  },
+  "Home": {
+    "individual": {
+      "title": "Join as Member and help shape a better future",
+      "subtitle": "Transform your career and expand your network with exclusive access to global leaders and industry experts.",
+      "description": "Access premium content, networking events, and professional development opportunities designed for ambitious individuals.",
+      "price": "350.000 FCFA",
+      "priceEuro": "250€ / 145$ per person",
+      "membershipType": "Individual Membership",
+      "privileges": {
+        "item1": "Access to all virtual and in-person events",
+        "item2": "Exclusive networking opportunities",
+        "item3": "Professional development resources",
+        "item4": "Monthly industry insights and reports"
+      }
+    },
+    "group": {
+      "title": "Join as Organization and lead collective change",
+      "subtitle": "Accelerate your organization's impact through collaborative partnerships and strategic alliances.",
+      "description": "Comprehensive organizational membership with team access, corporate benefits, and leadership development programs.",
+      "price": "500.000 FCFA",
+      "priceEuro": "500€ / 575$",
+      "membershipType": "Organization Membership",
+      "privileges": {
+        "item1": "Up to 10 team member access",
+        "item2": "Corporate branding opportunities",
+        "item3": "Executive leadership programs",
+        "item4": "Strategic partnership facilitation",
+        "item5": "Custom training and workshops"
+      }
+    },
+    "ui": {
+      "joinAsMember": "Join as member",
+      "joinAsNonMember": "Join as non-member",
+      "startRegistration": "Start you registration process",
+      "registerOrganization": "Register your organization",
+      "createIndividualAccount": "Create your individual account",
+      "toggleNavigation": "Toggle navigation",
+      "userProfile": "User profile"
+    },
+    "images": {
+      "worldEconomicForumEvent": "World Economic Forum event"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 "use client";
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { usePathname } from "next/navigation";
 
@@ -12,8 +13,8 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
   const isRegistrationPage = pathname === "/registration";
 
   return (
-    <>
+    <NuqsAdapter>
       {children}
-    </>
+    </NuqsAdapter>
   );
 } 
