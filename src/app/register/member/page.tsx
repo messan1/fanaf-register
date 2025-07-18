@@ -223,9 +223,9 @@ export default function Component() {
               {t("fields.phone.label")} *
             </Label>
             <div className="flex">
-              <div className="flex items-center justify-center w-12 border border-r-0 border-gray-200 rounded-l-lg bg-gray-50">
+              {/* <div className="flex items-center justify-center w-12 border border-r-0 border-gray-200 rounded-l-lg bg-gray-50">
                 <Plus className="h-4 w-4 text-gray-500" />
-              </div>
+              </div> */}
               <div className="relative flex-1">
                 <Input
                   id="telephone"

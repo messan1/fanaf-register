@@ -6,14 +6,18 @@ import { useQueryState } from "nuqs";
 export const SelectionCard = ({
   isMember,
   title,
+  isService,
 }: {
   isMember?: boolean;
+  isService?: boolean;
   title: string;
 }) => {
   const router = useRouter();
-  const [registrationType, setRegistrationType] = useQueryState("type",{defaultValue:"member"});
+  const [registrationType, setRegistrationType] = useQueryState("type", {
+    defaultValue: "member",
+  });
 
-  const t = useTranslations("Home")
+  const t = useTranslations("Home");
 
   return (
     <div className="bg-white rounded-3xl p-8 px-12 flex-1 border max-w-2xl">
@@ -23,19 +27,22 @@ export const SelectionCard = ({
             {title}
           </h3>
           <p className="text-gray-600 text-md leading-relaxed">
-            
             {isMember! ? t("detailSingle") : t("detailGroup")}
           </p>
         </div>
 
         <button
           onClick={() => {
+            if (isService) {
+              router.push("/register/hotel-name?type=" + registrationType);
+              return
+            }
             if (isMember) {
-              router.push("/register/member?type="+registrationType);
+              router.push("/register/member?type=" + registrationType);
               return;
             } else {
-              router.push("/register/group?type="+registrationType);
-              return
+              router.push("/register/group?type=" + registrationType);
+              return;
             }
           }}
           className={`group flex items-center space-x-3 bg-gray-100 hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-full transition-all duration-300 font-medium ${

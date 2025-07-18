@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Component() {
   return (
     <>
-      <CardContent className="space-y-8">
+      <CardContent className="space-y-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,6 +20,13 @@ export default function Component() {
           transition={{ delay: 0.4 }}
         >
           <SelectionCard title="Inscription groupée" />
+        </motion.div>
+                <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          <SelectionCard isService title="Services liés à la FANAF" />
         </motion.div>
       </CardContent>
     </>

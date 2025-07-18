@@ -1,4 +1,82 @@
 {
+    "Reservation": {
+    "HotelSelection": {
+      "title": "Select Your Hotel",
+      "description": "Choose the hotel for your stay.",
+      "fields": {
+        "hotelName": {
+          "label": "Hotel Name",
+          "placeholder": "Select a hotel",
+          "required": "Hotel name is required."
+        }
+      },
+      "actions": {
+        "next": "Next: Select Period"
+      }
+    },
+    "PeriodSelection": {
+      "title": "Select Your Stay Period",
+      "description": "Choose your check-in and check-out dates.",
+      "fields": {
+        "checkInDate": {
+          "label": "Check-in Date",
+          "placeholder": "Select check-in date",
+          "required": "Check-in date is required."
+        },
+        "checkOutDate": {
+          "label": "Check-out Date",
+          "placeholder": "Select check-out date",
+          "required": "Check-out date is required."
+        }
+      },
+      "actions": {
+        "next": "Next: Select Room",
+        "back": "Back to Hotel"
+      }
+    },
+    "RoomSelection": {
+      "title": "Select Your Room",
+      "description": "Choose your preferred room type and quantity.",
+      "fields": {
+        "roomType": {
+          "label": "Room Type",
+          "placeholder": "Select a room type",
+          "required": "Room type is required."
+        },
+        "numberOfRooms": {
+          "label": "Number of Rooms",
+          "placeholder": "Enter number of rooms",
+          "required": "Number of rooms is required.",
+          "invalid": "Please enter a valid number."
+        }
+      },
+      "actions": {
+        "next": "Next: Confirm Reservation",
+        "back": "Back to Period"
+      }
+    },
+    "Confirmation": {
+      "title": "Confirm Your Reservation",
+      "description": "Please review your reservation details.",
+      "details": {
+        "hotel": "Hotel",
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "roomType": "Room Type",
+        "numberOfRooms": "Number of Rooms"
+      },
+      "actions": {
+        "confirm": "Confirm Reservation",
+        "back": "Back to Room Selection"
+      }
+    },
+    "legal": {
+      "termsText": "By proceeding, you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and",
+      "privacyLink": "Privacy Policy"
+    }
+  },
   "PaymentPage": {
     "title": "Individual",
     "actions": {
