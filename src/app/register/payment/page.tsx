@@ -73,6 +73,7 @@ export default function PayPage() {
 
   // Extract user data from details
   const userData = useMemo(() => {
+    console.log(parsedData,"parsedData")
     if (!parsedData?.creator) return { email: "", name: "", phone: "" };
     
     const creator = parsedData.creator;
@@ -101,6 +102,20 @@ export default function PayPage() {
   }
 
   const creatorData = parsedData?.creator;
+
+  console.log({
+        email,
+    amount: pricingData.amount/1000,
+    currency: "XOF",
+    metadata: {
+      name,
+      phone,
+      memberCount: pricingData.memberCount,
+      isMember: pricingData.isMember
+    },
+    publicKey,
+    text: t("actions.payNow")
+  })
 
   const componentProps = {
     email,
@@ -168,6 +183,21 @@ export default function PayPage() {
 
   // Get translated benefits
   const benefits = t.raw("benefits.items");
+
+
+    console.log({
+        email,
+    amount: pricingData.amount/1000,
+    currency: "XOF",
+    metadata: {
+      name,
+      phone,
+      memberCount: pricingData.memberCount,
+      isMember: pricingData.isMember
+    },
+    publicKey,
+    text: t("actions.payNow")
+  })
 
   return (
     <div className="p-5 max-w-3xl mx-auto">
