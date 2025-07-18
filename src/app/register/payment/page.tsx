@@ -34,7 +34,7 @@ export default function PayPage() {
   // Parse and validate details
   const parsedData = useMemo(() => {
     if (!details) return null;
-    
+
     try {
       return JSON.parse(atob(details));
     } catch (error) {
@@ -46,41 +46,42 @@ export default function PayPage() {
 
   // Calculate pricing based on type and number of members
   const pricingData = useMemo(() => {
-    if (!parsedData) return { amount: 0, totalAmount: "0 FCFA", memberCount: 0 };
+    if (!parsedData)
+      return { amount: 0, totalAmount: "0 FCFA", memberCount: 0 };
 
     // Determine if it's a member or non-member
     const isMember = type === "member" || parsedData.type === "member";
     const basePrice = isMember ? 350000 : 500000; // Base price in FCFA
-    
+
     // Calculate number of members
     let memberCount = 1; // At least the creator
     if (parsedData.member && Array.isArray(parsedData.member)) {
       memberCount = parsedData.member.length;
     }
-    
+
     // Calculate total amount
     const totalAmountFCFA = basePrice * memberCount;
     const totalAmountKobo = totalAmountFCFA * 100; // Convert to kobo for Paystack
-    
+
     return {
       amount: totalAmountKobo,
       totalAmount: `${totalAmountFCFA.toLocaleString()} FCFA`,
       memberCount,
       basePrice,
-      isMember
+      isMember,
     };
   }, [parsedData, type]);
 
   // Extract user data from details
   const userData = useMemo(() => {
-    console.log(parsedData,"parsedData")
+    console.log(parsedData, "parsedData");
     if (!parsedData?.creator) return { email: "", name: "", phone: "" };
-    
+
     const creator = parsedData.creator;
     return {
       email: creator.email || "",
       name: `${creator.first_name || ""} ${creator.last_name || ""}`.trim(),
-      phone: creator.phone || ""
+      phone: creator.phone || "",
     };
   }, [parsedData]);
 
@@ -104,28 +105,28 @@ export default function PayPage() {
   const creatorData = parsedData?.creator;
 
   console.log({
-        email,
-    amount: pricingData.amount/1000,
+    email,
+    amount: pricingData.amount / 1000,
     currency: "XOF",
     metadata: {
       name,
       phone,
       memberCount: pricingData.memberCount,
-      isMember: pricingData.isMember
+      isMember: pricingData.isMember,
     },
     publicKey,
-    text: t("actions.payNow")
-  })
+    text: t("actions.payNow"),
+  });
 
   const componentProps = {
-    email,
-    amount: pricingData.amount/1000,
+    email: email ? email : "demo@demo.com",
+    amount: pricingData.amount / 1000,
     currency: "XOF",
     metadata: {
       name,
       phone,
       memberCount: pricingData.memberCount,
-      isMember: pricingData.isMember
+      isMember: pricingData.isMember,
     },
     publicKey,
     text: t("actions.payNow"),
@@ -142,14 +143,22 @@ export default function PayPage() {
           console.log(data);
         },
       });
-      console.log("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type)
+      console.log(
+        "https://fanaf-invoice.vercel.app/?details=" + details + "type=" + type
+      );
 
-      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
+      router.push(
+        "https://fanaf-invoice.vercel.app/?details=" + details + "type=" + type
+      );
     },
     onClose: async () => {
       const formData = JSON.parse(atob(details));
-      console.log("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type)
-      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
+      console.log(
+        "https://fanaf-invoice.vercel.app/?details=" + details + "type=" + type
+      );
+      router.push(
+        "https://fanaf-invoice.vercel.app/?details=" + details + "type=" + type
+      );
 
       //On payment succeed
       console.log(t("console.formData"));
@@ -160,15 +169,26 @@ export default function PayPage() {
       await registrationMutation.mutateAsync(formData, {
         onError(error, variables, context) {
           console.log(error);
-             console.log("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type)
-      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
-
+          console.log(
+            "https://fanaf-invoice.vercel.app/?details=" +
+              details +
+              "type=" +
+              type
+          );
+          router.push(
+            "https://fanaf-invoice.vercel.app/?details=" +
+              details +
+              "type=" +
+              type
+          );
         },
         onSuccess(data, variables, context) {
           console.log(data);
         },
       });
-      router.push("https://fanaf-invoice.vercel.app/?details=" + details+"type="+type);
+      router.push(
+        "https://fanaf-invoice.vercel.app/?details=" + details + "type=" + type
+      );
     },
   };
 
@@ -184,20 +204,19 @@ export default function PayPage() {
   // Get translated benefits
   const benefits = t.raw("benefits.items");
 
-
-    console.log({
-        email,
-    amount: pricingData.amount/1000,
+  console.log({
+    email,
+    amount: pricingData.amount / 1000,
     currency: "XOF",
     metadata: {
       name,
       phone,
       memberCount: pricingData.memberCount,
-      isMember: pricingData.isMember
+      isMember: pricingData.isMember,
     },
     publicKey,
-    text: t("actions.payNow")
-  })
+    text: t("actions.payNow"),
+  });
 
   return (
     <div className="p-5 max-w-3xl mx-auto">
@@ -206,9 +225,13 @@ export default function PayPage() {
 
         <div className="flex items-center justify-between mb-8">
           <div className="text-center">
-            <p className="text-4xl font-bold text-black">{pricingData.totalAmount}</p>
+            <p className="text-4xl font-bold text-black">
+              {pricingData.totalAmount}
+            </p>
             <p className="text-sm text-gray-600 mt-2 text-start">
-              {pricingData.isMember ? "Member" : "Non-member"} • {pricingData.memberCount} participant{pricingData.memberCount > 1 ? "s" : ""}
+              {pricingData.isMember ? "Member" : "Non-member"} •{" "}
+              {pricingData.memberCount} participant
+              {pricingData.memberCount > 1 ? "s" : ""}
             </p>
           </div>
         </div>
@@ -225,9 +248,7 @@ export default function PayPage() {
               className="border rounded-lg shadow-sm mb-4 overflow-hidden"
             >
               <AccordionTrigger className="flex items-center justify-between p-4 text-lg font-semibold hover:no-underline">
-                <span className="flex-1 text-left">
-                  {t("recap.title")}
-                </span>
+                <span className="flex-1 text-left">{t("recap.title")}</span>
               </AccordionTrigger>
               <AccordionContent className="border-t p-4">
                 <div className="space-y-2 text-gray-700">
@@ -263,7 +284,8 @@ export default function PayPage() {
                         <div key={index} className="ml-4 space-y-1">
                           <p className="font-medium">Member {index + 1}:</p>
                           <p className="text-sm">
-                            {member.first_name} {member.last_name} - {member.email}
+                            {member.first_name} {member.last_name} -{" "}
+                            {member.email}
                           </p>
                         </div>
                       ))}
